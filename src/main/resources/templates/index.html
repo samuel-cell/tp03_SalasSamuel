@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TP03 Salas Samuel</title>
+	<style>
+	    * {
+	        box-sizing: border-box;
+	        margin: 0;
+	        padding: 0;
+	    }
+	    body {
+	        font-family: Arial;
+            background-color: #340761;
+	    }
+	    header {
+	        background-color: #33dd39;
+	        color: #1f0953;
+	        padding: 10px;
+	        text-align: center;
+            font-size: 25px;
+            line-height: 70px;
+            width: 100%;
+            z-index: 2;
+	    }
+	    nav {
+	        background-color: #9ff332;
+	        padding: 10px;
+	        text-align: center;
+            line-height: 15px;
+            width: 100%;
+            z-index: 2;
+	    }    
+	    nav a {
+	        text-decoration: none;
+	        color: #ffffff;
+	        margin-right: 20px;
+	    }
+        nav a:hover {
+            color: #1f0953;
+        }
+	    main {
+	        padding: 20px;
+	        margin-right: 220px;
+            width: 80%;
+            float: left;
+	    }
+	    section {
+            margin: 20px;
+            padding-top: 20px;
+            color: #ffffff;
+        }
+	    h2 {
+	        color: #f00c0c;
+            font-size: 35px;
+            font-weight: bold; 
+            margin: 20px 0;
+	    }
+	    h3 {
+	        color: #21758f;
+            font-size: 25px;
+            margin: 10px 0;
+	    }
+        .descripcion {
+            margin: 15px 0;
+        }
+        ul {
+            margin: 5px 20px;
+        }
+        img{
+            width: 25%;
+            height: 25%;
+            margin: 15px 0;
+        }
+        table {
+            background-color: #1138d6;
+            margin: 15px 0;
+            border-collapse: collapse;
+        }
+        th{
+            font-size: 20px;
+        }
+        th, td {
+        	border: 1px solid #000;
+    		padding: 8px;
+        }
+	    footer {
+	        background-color: #13066a;
+	        color: #ffffff;
+	        text-align: center;
+	        padding: 5px;
+	        width: 100%;
+	        bottom: 0;
+            z-index: 2;
+	    }
+        footer a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        footer a:hover {
+            color: #0cced8;
+        }
+        aside {
+            padding: 20px;
+        }
+        aside ul {
+            color: #21758f;
+        }
+        aside li {
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Programación en Java</h1>
+    </header>
+    <nav>
+        <a href="#java">Java</a>
+        <a href="#sts">Spring Tool Suite</a>
+        <a href="#java_sts">Java en STS</a>
+    </nav>
+    <main>
+        <section id="java">
+            <h2>Java</h2>
+                <p class="descripcion">Java es un lenguaje de programación de propósito general, orientado a objetos y diseñado para tener una alta portabilidad. Fue desarrollado por Sun Microsystems (adquirido por Oracle Corporation en 2010) en la década de 1990 y publicada comercialmente en 1995. La compañía Sun desarrolló la implementación de referencia original para los compiladores de Java, máquinas virtuales y librerías de clases</p>
+                <img src="https://miro.medium.com/v2/resize:fit:1200/1*2XrX0fP0htyTCah7AglTig.jpeg" alt="java-logo">
+            <h3>Características</h3>
+                <ul>
+                    <li>Portabilidad
+                        <p>Java tiene la capacidad de ejecutarse en múltiples plataformas sin necesidad de recompilar el código fuente. Esto se logra a través de la máquina virtual Java (JVM), que interpreta el código Java en bytecode y lo ejecuta en cualquier plataforma que tenga una implementación de JVM.</p>
+                    </li>
+                    <li>Orientación a Objetos
+                        <p>Java es un lenguaje completamente orientado a objetos, lo que significa que todo en Java es un objeto, incluidos los tipos primitivos que se envuelven automáticamente en clases. Esto promueve la reutilización del código y facilita el desarrollo de software modular y mantenible.</p>
+                    </li>
+                    <li>Seguridad
+                        <p>Java está diseñado con un fuerte énfasis en la seguridad. La JVM proporciona un entorno de ejecución seguro mediante el uso de un modelo de seguridad basado en sandbox, que restringe las acciones de las aplicaciones para proteger el sistema subyacente.</p>
+                    </li>
+                    <li>Robustez y Confianza
+                        <p>Java se diseñó con el objetivo de producir un código robusto y confiable. Ofrece características como la gestión automática de la memoria, la comprobación de límites de array en tiempo de ejecución y la gestión de excepciones para ayudar a prevenir errores y fallos en tiempo de ejecución.</p>
+                    </li>
+                    <li>Multiplataforma
+                        <p>Java es compatible con una amplia gama de dispositivos y sistemas operativos, desde computadoras de escritorio hasta dispositivos móviles y sistemas integrados. Esto lo hace ideal para el desarrollo de aplicaciones que deben ejecutarse en diferentes plataformas.</p>
+                	</li>
+                </ul>
+            <h3>Plataformas</h3>
+                <ul>
+                    <li>JVM (Java Virtual Machine)
+                        <p>La JVM es el corazón de la plataforma Java. Interpreta el bytecode generado por el compilador Java y lo ejecuta en el sistema operativo subyacente. La JVM proporciona portabilidad al permitir que el mismo bytecode se ejecute en diferentes sistemas operativos.</p>
+                    </li>
+                    <li>JDK (Java Development Kit)
+                        <p>El JDK es un conjunto de herramientas de desarrollo necesarias para compilar, depurar y ejecutar aplicaciones Java. Incluye el compilador Java (javac), la JVM, bibliotecas estándar y otras utilidades.</p>
+                    </li>
+                    <li>JRE (Java Runtime Environment)
+                        <p>El JRE es un subconjunto del JDK que solo incluye la JVM y las bibliotecas estándar necesarias para ejecutar aplicaciones Java. Los usuarios finales que solo necesitan ejecutar aplicaciones Java solo necesitan tener instalado el JRE.</p>
+                	</li>
+                </ul>
+            <h3>Ecosistema de Desarrollo</h3>
+                <ul>
+                    <li>Frameworks de Desarrollo
+                        <p>Spring Framework es uno de los frameworks más populares para el desarrollo de aplicaciones empresariales en Java. Proporciona características como inyección de dependencias, control transaccional y seguridad. Otros frameworks incluyen Hibernate para el mapeo objeto-relacional y Apache Struts para el desarrollo de aplicaciones web.</p>
+                    </li>
+                    <li>Herramientas de Desarrollo
+                        <p>IDEs como IntelliJ IDEA, Eclipse y NetBeans proporcionan un entorno integrado para el desarrollo de aplicaciones Java. Estas herramientas ofrecen características como autocompletado de código, depuración, refactorización y soporte para control de versiones.</p>
+                    </li>
+                    <li>Bibliotecas y Componentes
+                        <p>El repositorio Maven Central es una fuente de bibliotecas y componentes de código abierto que se pueden incorporar fácilmente en proyectos Java mediante sistemas de gestión de dependencias como Maven y Gradle. Esto facilita la reutilización de código y acelera el desarrollo.</p>
+                	</li>
+                </ul>
+            <h3>Aplicaciones</h3>
+                <ul>
+                    <li>Aplicaciones Empresariales
+                        <p>Java es ampliamente utilizado en el desarrollo de aplicaciones empresariales, como sistemas de gestión de relaciones con el cliente (CRM), sistemas de gestión de recursos empresariales (ERP) y aplicaciones de comercio electrónico.</p>
+                    </li>
+                    <li>Aplicaciones Web
+                        <p>Los frameworks como Spring Boot y Java EE permiten el desarrollo de aplicaciones web robustas y escalables. Java también se utiliza en la creación de servicios web utilizando tecnologías como JAX-RS y SOAP.</p>
+                    </li>
+                    <li>Aplicaciones Móviles
+                        <p>Aunque Android utiliza su propio lenguaje de programación (Kotlin), Java sigue siendo importante en el desarrollo de aplicaciones Android. Muchas bibliotecas y herramientas de Android están escritas en Java, y los desarrolladores de Android a menudo necesitan conocimientos de Java para entender el código existente.</p>
+                    </li>
+                    <li>Aplicaciones Embebidas y de IoT
+                        <p>Java es utilizado en el desarrollo de aplicaciones embebidas y de Internet de las cosas (IoT) debido a su portabilidad y seguridad. La plataforma Java ME (Micro Edition) está diseñada específicamente para dispositivos con recursos limitados.</p>
+                	</li>
+                </ul>
+        </section>
+        <section id="sts">
+            <h2>Spring Tool Suite</h2>
+                <p class="descripcion">Spring Tool Suite (STS) es un entorno de desarrollo integrado (IDE) basado en Eclipse y específicamente diseñado para facilitar el desarrollo de aplicaciones utilizando el framework Spring para Java.</p>
+                <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJdOYF%2Fbtq2Lk9Ly6H%2FEnnXXsOO4hyoVLZHXn4XQ0%2Fimg.png" alt="sts-logo">
+            <h3>Eclipse</h3>
+                <p class="descripcion">Spring Tool Suite se basa en Eclipse, lo que significa que hereda muchas de las características y funcionalidades de Eclipse. Esto incluye una amplia gama de complementos y extensiones disponibles en el ecosistema de Eclipse, así como soporte para múltiples lenguajes de programación y tecnologías.</p>
+                <img src="https://algol.dev/wp-content/uploads/2020/10/logo-eclipse.png" alt="eclipse-logo">
+            <h3>Características</h3>
+                <ul>
+                    <li>Integración de Spring
+                        <p>STS proporciona integración directa con el ecosistema de Spring, lo que facilita el desarrollo de aplicaciones basadas en Spring Framework. Esto incluye soporte para Spring Boot, Spring MVC, Spring Data, Spring Security y otros proyectos de Spring.</p>
+                    </li>
+                    <li>Asistente de Configuración
+                        <p>STS ofrece asistentes y plantillas que simplifican la configuración de proyectos Spring. Estos asistentes guían al desarrollador a través de la creación de archivos de configuración XML o de anotaciones para definir beans, controladores, servicios y otros componentes de Spring.</p>
+                    </li>
+                    <li>Depuración y Pruebas
+                        <p>STS proporciona herramientas avanzadas para depurar y probar aplicaciones Spring. Los desarrolladores pueden ejecutar y depurar sus aplicaciones directamente desde el IDE, configurar puntos de interrupción, inspeccionar variables y ver la pila de llamadas en tiempo real.</p>
+                    </li>
+                    <li>Refactorización y Autocompletado
+                        <p>STS incluye características de refactorización de código que permiten a los desarrolladores reestructurar y mejorar su código de manera segura. También ofrece autocompletado inteligente que sugiere nombres de métodos, atributos y beans de Spring mientras se escribe el código.</p>
+                    </li>
+                    <li>Administración de Dependencias
+                        <p>STS facilita la gestión de dependencias de proyectos mediante la integración con sistemas de gestión de dependencias como Maven y Gradle. Los desarrolladores pueden agregar, eliminar o actualizar dependencias directamente desde el IDE.</p>
+                    </li>
+                    <li>Soporte para Tecnologías Relacionadas
+                        <p>Además del soporte para Spring, STS también ofrece herramientas para el desarrollo de aplicaciones web utilizando tecnologías como HTML, CSS, JavaScript, y frameworks como AngularJS y React. También proporciona soporte para bases de datos y servicios en la nube.</p>
+                	</li>
+                </ul>
+            <h3>Desarrollo de Aplicaciones</h3>
+                <ul>
+                    <li>Spring Boot Ready
+                        <p>STS está especialmente optimizado para trabajar con Spring Boot, lo que permite a los desarrolladores crear rápidamente aplicaciones autocontenidas con configuración mínima. STS ofrece asistentes y plantillas para iniciar proyectos de Spring Boot y proporciona características como la actualización en vivo para facilitar el desarrollo y la depuración.</p>
+                    </li>
+                    <li>Inyección de Dependencias y AOP
+                        <p>STS ofrece soporte para características clave de Spring como la inyección de dependencias y la programación orientada a aspectos (AOP). Los desarrolladores pueden definir y configurar fácilmente dependencias y aspectos utilizando anotaciones o XML, con ayuda de herramientas de autocompletado y validación.</p>
+                	</li>
+                </ul>
+            <h3>Integración con Otras Tecnologías</h3>
+                <ul>
+                    <li>Desarrollo Web
+                        <p>STS ofrece soporte para el desarrollo de aplicaciones web utilizando tecnologías como Spring MVC, Thymeleaf, JSP y HTML5. Los desarrolladores pueden crear y editar archivos HTML, CSS y JavaScript, y beneficiarse de herramientas de autocompletado y validación.</p>
+                    </li>
+                    <li>Base de Datos
+                        <p>STS proporciona herramientas para trabajar con bases de datos en aplicaciones Spring. Los desarrolladores pueden configurar conexiones a bases de datos, ejecutar consultas SQL, ver y modificar datos, y trabajar con migraciones de bases de datos utilizando frameworks como Flyway o Liquibase.</p>
+                    </li>
+                    <li>Servicios en la Nube
+                        <p>STS ofrece soporte para el desarrollo de aplicaciones en la nube utilizando servicios como AWS, Azure y Google Cloud Platform. Los desarrolladores pueden crear, desplegar y administrar aplicaciones en la nube directamente desde el IDE, con integración con herramientas de despliegue como Cloud Foundry o Kubernetes.</p>
+                	</li>
+                </ul>
+        </section>
+        <section id="java_sts">
+            <h2>Java en STS</h2>
+                <p class="descripcion">Trabajar con Java en Spring Tool Suite (STS) ofrece una experiencia de desarrollo altamente productiva y eficiente. STS proporciona una integración profunda con Spring Framework, soporte completo para Maven y Gradle, herramientas avanzadas de productividad, despliegue y pruebas integradas, una comunidad activa de usuarios y actualizaciones regulares. En resumen, STS simplifica el desarrollo de aplicaciones Java, especialmente aquellas basadas en Spring, y facilita la gestión del ciclo de vida del proyecto.</p>
+            <h3>Sintaxis del código</h3>
+                <ul>
+                    <li>Clases y Archivos Fuente
+                        <p>En Java, todo está contenido dentro de clases, y los programas autónomos también son clases. El código fuente se guarda en archivos con la misma nomenclatura que la clase que contienen, con extensión ".java".</p>
+                    </li>
+                    <li>Compilación
+                        <p>El compilador de Java genera un archivo de clase (".class") por cada clase definida en el archivo fuente. Para clases anónimas, se utiliza el nombre de la clase que las encierra junto con un número entero.</p>
+                    </li>
+                    <li>Método Main
+                        <p>Las aplicaciones autónomas deben contener un método "main()" que sirve como punto de entrada para la ejecución del programa. Este método debe ser estático, no devolver ningún valor ("void"), y aceptar un array de objetos String como argumento.</p>
+                    </li>
+                    <li>Palabras Clave y Modificadores
+                        <p>Se utilizan palabras clave como "public" y "static" para indicar la visibilidad y la naturaleza del método main. La palabra "public" significa que el método puede ser llamado desde otras clases, mientras que "static" indica que es un método de clase, asociado a la clase en lugar de a una instancia específica.</p>
+                    </li>
+                    <li>Utilidad de Impresión
+                        <p>La clase "System" en Java proporciona un campo público estático llamado "out", que es una instancia de "PrintStream". Este objeto ofrece métodos como "println(String)" para imprimir datos en la pantalla (salida estándar).</p>
+                	</li>
+                </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ventajas</th>
+                        <th>Desventajas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Integración profunda con el framework Spring</td>
+                        <td>Puede consumir muchos recursos del sistema</td>
+                    </tr>
+                    <tr>
+                        <td>Productividad mejorada con herramientas avanzadas</td>
+                        <td>Curva de aprendizaje pronunciada para nuevos usuarios</td>
+                    </tr>
+                    <tr>
+                        <td>Soporte completo para Maven y Gradle</td>
+                        <td>Dependencia del entorno Eclipse</td>
+                    </tr>
+                    <tr>
+                        <td>Despliegue y pruebas integradas</td>
+                        <td>Posible necesidad de ajustes de configuración</td>
+                    </tr>
+                    <tr>
+                        <td>Comunidad activa y soporte sólido</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Actualizaciones regulares con nuevas características</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <aside>
+        <h3>Versiones relevantes de Java</h3>
+            <ul>
+                <li>Java 8 (expresiones lambda, Streams API, y mejoras en la API de fecha y hora)</li>
+                <li>Java 11(mayor estabilidad e introducción del módulo HTTP Client)</li>
+                <li>Java 15(patrón de coincidencia de patrones (pattern matching), mejoras en la recolección de basura y actualizaciones en el sistema de gestión de imágenes)</li>
+            </ul>
+        <h3>Versiones relevantes de STS</h3>
+            <ul>
+                <li>STS 3.x (soporte para Spring Boot, Spring MVC y Spring Data)</li>
+                <li>STS 4.x (mejoras en la integración con Spring Boot y otras tecnologías de Spring)</li>
+            </ul>
+    </aside>
+    <footer>
+        <p>Contacto: salassamuel098@gmail.com</p>
+        <p>Redes Sociales:</p>
+        <a href="https://www.instagram.com/samm_c.c/">Instragram</a>
+        <a href="https://github.com/samuel-cell">GitHub</a>
+    </footer>
+</body>
+</html>

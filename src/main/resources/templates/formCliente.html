@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TP03 Salas Samuel</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<header>
+        <h1>Programación Visual en Java</h1>
+        <nav>
+        <a href="#java">Java</a>
+        <a href="#sts">Spring Tool Suite</a>
+        <a href="#java_sts">Java en STS</a>
+    </nav>
+    </header>
+    <main class="main">
+    	<h2>Formulario de Datos</h2>
+    	<form>
+    		<label for="dni">DNI:</label>
+    		<input id="dni" type="number" name="dni" placeholder="Ingrese su DNI" required><br>
+    		<label for="nombres">Nombres:</label>
+    		<input id="nombres" type="text" name="nombres" placeholder="Ingrese sus nombres" required><br>
+    		<label for="apellidos">Apellidos:</label>
+    		<input id="apellidos" type="text" name="apellidos" placeholder="Ingrese sus apellidos" required><br>
+    		<label for="fechaNac">Fecha de nacimiento:</label>
+    		<input id="fechaNac" type="date" name="fechaNac" placeholder="Ingrese su nacimiento" required><br>
+    		<div>
+    			<label>Genero:</label><br>
+    			<label for="generoM">Masculino</label>
+	    		<input id="generoM" type="radio" value="Masculino" name="genero">
+    			<label for="generoF">Femenino</label>
+	    		<input id="generoF" type="radio" value="Femenino" name="genero">
+	    		<label for="generoO">Otro</label>
+	    		<input id="generoO" type="radio" value="Otro" name="genero">
+    		</div>
+    		<label for="email">Email:</label>
+    		<input id="email" type="email" name="email" placeholder="Ingrese su email" required><br>
+    		<label for="domicilio">Domicilio:</label>
+    		<input id="domicilio" type="text" name="domicilio" placeholder="Ingrese su domicilio" required><br>
+    		<label for="provincia">Provinvia:</label>
+    		<select id="provincia" name="provincia" required>
+    			<option value="BuenosAires">Buenos Aires</option>
+    			<option value="Catamarca">Catamarca</option>
+    			<option value="Chaco">Chaco</option>
+    			<option value="Chubut">Chubut</option>
+    			<option value="Jujuy">Jujuy</option>
+    			<option value="Cordoba">Cordoba</option>
+    			<option value="Corrientes">Corrientes</option>
+    			<option value="EntreRios">Entre Rios</option>
+    			<option value="Formosa">Formosa</option>
+    			<option value="Jujuy" selected>Jujuy</option>
+    			<option value="LaPampa">La Pampa</option>
+    			<option value="LaRioja">La Rioja</option>
+    			<option value="Mendoza">Mendoza</option>
+    			<option value="Misiones">Misiones</option>
+    			<option value="Neuquen">Neuquen</option>
+    			<option value="RioNegro">Rio Negro</option>
+    			<option value="Salta">Salta</option>
+    			<option value="SanJuan">San Juan</option>
+    			<option value="SanLuis">San Luis</option>
+    			<option value="SantaCruz">Santa Cruz</option>
+    			<option value="SantaFe">Santa Fe</option>
+    			<option value="SantiagoDelEstero">Santiago del Estero</option>
+    			<option value="TierraDelFuego">Tierra del Fuego</option>
+    			<option value="Tucuman">Tucuman</option>
+    		</select><br>
+    		<label for="telefono">Telefono/Celular:</label>
+    		<input id="telefono" type="number" name="telefono" placeholder="Ingrese su telefono" required><br>
+    		<label>Categorias de interes:</label>
+    		<div>
+    			<label for="categoria1">Accion</label>
+    			<input id="categoria1" type="checkbox" name="categoria1">
+    			<label for="categoria2">Fantasia</label>
+    			<input id="categoria2" type="checkbox" name="categoria2">
+    			<label for="categoria3">Romance</label>
+    			<input id="categoria3" type="checkbox" name="categoria3">
+    			<label for="categoria4">Terror</label>
+    			<input id="categoria4" type="checkbox" name="categoria4">
+    			<label for="categoria5">Comedia</label>
+    			<input id="categoria5" type="checkbox" name="categoria5">
+    		</div>
+    		<label for="sugerencias">Sugerencias:</label><br>
+    		<textarea id="sugerencias" name="sugerencias" placeholder="Ingrese sus sugerencias" rows="8" cols="40"></textarea><br>
+    		<label for="password">Password:</label>
+    		<input id="password" type="password" name="password" placeholder="Ingrese su password" maxlength="8" required><br>
+    		<label for="passwordN">Password Nuevamente:</label>
+    		<input id="passwordN" type="password" name="passwordN" placeholder="Ingrese su password nuevamente" maxlength="8" required><br>
+    		<label for="t&c">Acepto los terminos y condiciones</label>
+    		<input id="t&c" type="checkbox" name="t&c" required><br>
+    		<label for="infRelativa">Acepto recibir informacion relativa</label>
+    		<input id="infRelativa" type="checkbox" name="infRelativa"><br>
+    		<input type="submit" value="Guardar">
+    		<input type="button" value="Cancelar">
+    	</form>
+    </main>
+    <footer>
+        <p>Contacto: salassamuel098@gmail.com</p>
+        <p>Redes Sociales:</p>
+        <a href="https://www.instagram.com/samm_c.c/">Instragram</a>
+        <a href="https://github.com/samuel-cell">GitHub</a>
+    </footer>
+</body>
+</html>
